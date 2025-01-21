@@ -1,0 +1,34 @@
+{
+  "status": {
+    "free": "Libre",
+    "busy": "Occupé"
+  },
+  "weekDays": {
+    "mon": "Lundi",
+    "tue": "Mardi",
+    "wed": "Mercredi",
+    "thu": "Jeudi",
+    "fri": "Vendredi",
+    "sat": "Samedi",
+    "sun": "Dimanche"
+  },
+  "validation": {
+    "nameRequired": "Nom est requis",
+    "emailRequired": "Email est requis",
+    "emailInvalid": "Email est invalide"
+  },
+  "month": {
+    "January": "Janvier",
+    "February": "Février",
+    "March": "Mars",
+    "April": "Avril",
+    "May": "Mai",
+    "June": "Juin",
+    "July": "Juillet",
+    "August": "Août",
+    "September": "Septembre",
+    "October": "Octobre",
+    "November": "Novembre",
+    "December": "Décembre"
+  }
+}
