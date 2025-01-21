@@ -32,9 +32,15 @@ const MapActivity = ({
   );
 
   const getMarkerIcon = (activities: string[]) => {
-    if (activities.includes("Online Classes" || "Cours en Ligne")) {
+    if (
+      activities.includes("Online Classes") ||
+      activities.includes("Cours en Ligne")
+    ) {
       return <MapPinMountain />;
-    } else if (activities.includes("Ethical Hunting" || "Chasse Ethique")) {
+    } else if (
+      activities.includes("Ethical Hunting") ||
+      activities.includes("Chasse Ethique")
+    ) {
       return <MapPinFishing />;
     } else {
       return <MapPinCrosshair />;
