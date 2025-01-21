@@ -23,14 +23,15 @@ type Location = {
 };
 
 const TitreBloc2 = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const [selectedActivity, setSelectedActivity] = useState("hiking");
 
   const handleActivityClick = (activity: string) => {
     setSelectedActivity(activity);
   };
 
-  const cartePoints = t("carte_point", { returnObjects: true }) as Location[];
+  const cartePoints =
+    (t("carte_point", { returnObjects: true }) as Location[]) || [];
   console.log(111, cartePoints);
 
   return (
@@ -86,7 +87,7 @@ const TitreBloc2 = () => {
         </div>
         <div className="flex justify-center">
           <div className="relative w-full h-[698px]">
-            {cartePoints?.length > 0 && (
+            {cartePoints?.length > 0 && typeof cartePoints !== "string" && (
               <>
                 {selectedActivity === "hiking" && (
                   <MapActivity

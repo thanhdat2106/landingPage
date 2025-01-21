@@ -49,7 +49,7 @@ const ItemDate = ({
   status: boolean;
   onClick: (value: string) => void;
 }) => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("common");
 
   return (
     <motion.div
@@ -77,7 +77,7 @@ const ItemDate = ({
   );
 };
 const Actitvity = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("common");
   const [selectedDates, setSelectedDates] =
     useState<string[]>(initialSelectedDates);
   const [currentMonth, setCurrentMonth] = useState<number>(1); // Default to January

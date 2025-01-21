@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 
 const TitreBloc5 = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <motion.div
       className="flex flex-col max-w-[1240px] w-full items-center justify-center p-4 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#9ce7e6]/30 to-[#ffffff]"

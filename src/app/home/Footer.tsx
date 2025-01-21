@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <motion.footer
       className="bg-[#4A1E1E] text-white py-8"

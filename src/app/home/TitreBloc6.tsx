@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 
 const TitreBloc6 = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <motion.div
       className="flex flex-col max-w-[1240px] w-full items-center justify-center text-center"

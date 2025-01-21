@@ -74,7 +74,6 @@ const MapActivity = ({
             {locations.map((location, index) => {
               const coordinates =
                 listCoordinates[index % listCoordinates.length];
-              console.log(111, coordinates);
               return (
                 <Marker
                   key={`${location.id}-${index}`}
