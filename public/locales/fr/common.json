@@ -4,13 +4,13 @@
     "busy": "Occupé"
   },
   "weekDays": {
-    "mon": "Lundi",
-    "tue": "Mardi",
-    "wed": "Mercredi",
-    "thu": "Jeudi",
-    "fri": "Vendredi",
-    "sat": "Samedi",
-    "sun": "Dimanche"
+    "mon": "Lun",
+    "tue": "Mar",
+    "wed": "Mer",
+    "thu": "Jeu",
+    "fri": "Ven",
+    "sat": "Sam",
+    "sun": "Dim"
   },
   "validation": {
     "nameRequired": "Nom est requis",
