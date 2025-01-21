@@ -254,7 +254,7 @@ function CarouselContent({
     };
 
     const observer = new IntersectionObserver((entries) => {
-      const visibleCount = entries.filter(
+      const visibleCount = entries?.filter(
         (entry) => entry.isIntersecting
       ).length;
       setVisibleItemsCount(visibleCount);

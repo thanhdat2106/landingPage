@@ -45,8 +45,8 @@ const TitreBloc2 = () => {
         <Title title={t("bloc_2.title")} className="mt-[60px] mb-4" />
         <div className="flex justify-center items-center flex-wrap mb-4 gap-2">
           <button
-            className={`bg-white text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
-              selectedActivity === "hiking" ? "bg-[#F2542D] text-white" : ""
+            className={` text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
+              selectedActivity === "hiking" ? "bg-orange text-white" : ""
             }`}
             onClick={() => handleActivityClick("hiking")}
           >
@@ -58,8 +58,8 @@ const TitreBloc2 = () => {
             <span className="text-sm">{t("bloc_2.cases.0")}</span>
           </button>
           <button
-            className={`bg-white text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
-              selectedActivity === "fishing" ? "bg-[#F2542D] text-white" : ""
+            className={`text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
+              selectedActivity === "fishing" ? "bg-orange text-white" : ""
             }`}
             onClick={() => handleActivityClick("fishing")}
           >
@@ -71,8 +71,8 @@ const TitreBloc2 = () => {
             <span className="text-sm">{t("bloc_2.cases.1")}</span>
           </button>
           <button
-            className={`bg-white text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
-              selectedActivity === "hunting" ? "bg-[#F2542D] text-white" : ""
+            className={` text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
+              selectedActivity === "hunting" ? "bg-orange text-white" : ""
             }`}
             onClick={() => handleActivityClick("hunting")}
           >

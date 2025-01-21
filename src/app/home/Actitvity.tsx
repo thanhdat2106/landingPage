@@ -167,7 +167,7 @@ const Actitvity = () => {
   const saveSelectedDates = (value: string) => {
     if (selectedDates.includes(value)) {
       setSelectedDates((preselectedDates) =>
-        preselectedDates.filter((date) => date !== value)
+        preselectedDates?.filter((date) => date !== value)
       );
     } else {
       setSelectedDates((preselectedDates) => [...preselectedDates, value]);
