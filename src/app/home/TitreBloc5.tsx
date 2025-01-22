@@ -40,7 +40,7 @@ const TitreBloc5 = () => {
         </motion.h1>
       </motion.div>
       <motion.div
-        className="max-w-6xl rounded-lg shadow-lg mt-8 p-12 w-full"
+        className="max-w-6xl rounded-lg mt-8 p-12 w-full"
         style={{
           backgroundImage: "url(/background.png)",
           backgroundSize: "cover",

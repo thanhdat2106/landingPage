@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { getDaysInMonth, cn } from "@/lib/utils";
 import Button from "@/components/ui/button";
+import Title from "@/components/title";
 
 const initialSelectedDates = ["28", "29", "4"];
 
@@ -188,19 +189,7 @@ const Actitvity = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.div
-        className="flex justify-center items-center mb-8"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="h-[1px] bg-orange-600 transform translate-y-1/2 w-full"></div>
-        <h1 className="flex-grow-1 text-center text-3xl font-bold text-orange-600 relative w-full">
-          {t("bloc_2_2.title")}
-        </h1>
-        <div className="h-[1px] bg-orange-600 transform translate-y-1/2 w-full"></div>
-      </motion.div>
-
+      <Title title={t("bloc_2_2.title")} className="mt-[40px] mb-4" />
       <motion.div
         className="bg-white p-6 rounded-lg border border-gray-300 card-container"
         initial={{ scale: 0.95, opacity: 0 }}

@@ -1,6 +1,8 @@
 "use client";
 import Header from "./home/Header";
 import dynamic from "next/dynamic";
+import { motion } from "motion/react";
+import { useEffect, useState } from "react";
 
 const TitreBloc1 = dynamic(() => import("./home/TitreBloc1"), { ssr: false });
 const TitreBloc2 = dynamic(() => import("./home/TitreBloc2"), { ssr: false });
@@ -13,6 +15,24 @@ const Actitvity = dynamic(() => import("./home/Actitvity"), { ssr: false });
 import "@/i18n";
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const middleOfPage = window.innerHeight / 2;
+      setShowButton(window.scrollY >= middleOfPage);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <Header />
@@ -25,6 +45,16 @@ export default function Home() {
         <TitreBloc5 />
         <TitreBloc6 />
       </div>
+      {showButton && (
+        <motion.button
+          onClick={scrollToTop}
+          className="fixed bottom-5 right-5 h-10 w-10 bg-orange text-white rounded-full shadow-lg"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          ↑
+        </motion.button>
+      )}
       <Footer />
     </div>
   );

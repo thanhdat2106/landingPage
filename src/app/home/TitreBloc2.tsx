@@ -35,7 +35,7 @@ const TitreBloc2 = () => {
   console.log(111, cartePoints);
 
   return (
-    <div className="w-full p-8 relative bg-[#FFF6F4] flex justify-center items-center">
+    <div className="w-full px-8 py-4 relative bg-[#FFF6F4] flex justify-center items-center ">
       <Image
         src="/backgroundmap.png"
         alt="Background"
@@ -43,7 +43,7 @@ const TitreBloc2 = () => {
         className="absolute inset-0 z-0 opacity-20"
       />
       <div className="max-w-[1240px] w-full relative z-10">
-        <Title title={t("bloc_2.title")} className="mt-[60px] mb-4" />
+        <Title title={t("bloc_2.title")} className="mt-[40px] mb-4" />
         <div className="flex justify-center items-center flex-wrap mb-4 gap-2">
           <button
             className={` text-[#562C2C] font-semibold py-2 px-4 rounded-full border border-[#F2542D80] flex items-center space-x-2 ${
